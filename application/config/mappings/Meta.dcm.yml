@@ -1,0 +1,22 @@
+Meta:
+  type: entity
+  fields:
+    id:
+      id: true
+      type: integer
+    first_name:
+      type: string
+      length: 50
+      nullable: true
+    last_name:
+      type: string
+      length: 50
+      nullable: true
+    company:
+      type: string
+      length: 100
+      nullable: true
+    phone:
+      type: string
+      length: 20
+      nullable: true

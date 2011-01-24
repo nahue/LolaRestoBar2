@@ -1,0 +1,35 @@
+Categoria:
+  type: entity
+  fields:
+    id:
+      id: true
+      type: integer
+    parent_id:
+      type: integer
+      length: 10
+      nullable: false
+    nombre:
+      type: string
+      length: 25
+      nullable: false
+    descripcion:
+      type: string
+      length: 255
+      nullable: false
+  indexes:
+    IX_Parent_id:
+      columns: [parent_id]
+    IX_Nombre:
+      columns: [nombre]
+  manyToMany:
+    Productos:
+      targetEntity: Producto
+      inversedBy: Categorias
+      joinTable:
+        name: CategoriasProductos
+        joinColumns:
+          Categoria_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          Producto_id:
+            referencedColumnName: id

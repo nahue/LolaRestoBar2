@@ -1,0 +1,6 @@
+Agencia:
+  type: entity
+  fields:
+    codigo:
+      id: true
+      type: string

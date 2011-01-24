@@ -1,0 +1,14 @@
+Groups:
+  type: entity
+  fields:
+    id:
+      id: true
+      type: integer
+    name:
+      type: string
+      length: 20
+      nullable: false
+    description:
+      type: string
+      length: 100
+      nullable: false

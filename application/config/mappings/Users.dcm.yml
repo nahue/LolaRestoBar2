@@ -1,0 +1,50 @@
+Users:
+  type: entity
+  fields:
+    id:
+      id: true
+      type: integer
+    ip_address:
+      type: integer
+      length: 16
+      nullable: false
+    username:
+      type: string
+      length: 15
+      nullable: false
+    password:
+      type: string
+      length: 40
+      nullable: false
+    salt:
+      type: string
+      length: 40
+      nullable: true
+    email:
+      type: string
+      length: 100
+      nullable: false
+    activation_code:
+      type: string
+      length: 40
+      nullable: true
+    forgotten_password_code:
+      type: string
+      length: 40
+      nullable: true
+    remember_code:
+      type: string
+      length: 40
+      nullable: true
+    created_on:
+      type: integer
+      length: 11
+      nullable: false
+    last_login:
+      type: integer
+      length: 11
+      nullable: true
+    active:
+      type: integer
+      length: 1
+      nullable: true

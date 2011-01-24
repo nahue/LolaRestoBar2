@@ -1,0 +1,24 @@
+Producto:
+  type: entity
+  fields:
+    id:
+      id: true
+      type: integer
+    nombre:
+      type: string
+      length: 25
+      nullable: true
+    vigencia:
+      type: date
+      nullable: true
+    precio:
+      type: float
+      length: 5
+      nullable: true
+  indexes:
+    IX_Nombre:
+      columns: [nombre]
+  manyToMany:
+    Categorias:
+      targetEntity: Categoria
+      mappedBy: Productos

@@ -1,0 +1,21 @@
+cisessions:
+  type: entity
+  fields:
+    session_id:
+      id: true
+      type: string
+    ip_address:
+      type: string
+      length: 16
+      nullable: false
+    user_agent:
+      type: string
+      length: 150
+      nullable: false
+    last_activity:
+      type: integer
+      length: 10
+      nullable: false
+    user_data:
+      type: string
+      nullable: false

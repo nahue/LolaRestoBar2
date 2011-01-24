@@ -1,0 +1,6 @@
+CategoriasProductos:
+  type: entity
+  fields:
+    ID:
+      id: true
+      type: integer
